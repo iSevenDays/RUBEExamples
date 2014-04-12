@@ -1,0 +1,818 @@
+
+{
+  "activeScript" : "/*\nbody b = addBody(-1, '{}');\n// 3:2\nb.addFixture(-1, '{\"shapes\":[{\"type\":\"loop\"}],\"vertices\":{\"x\":[-48,48,48,-48],\"y\":[0,0,64,64]}}');\n// 16:9\nb.addFixture(-1, '{\"shapes\":[{\"type\":\"loop\"}],\"vertices\":{\"x\":[-56.8,56.8,56.8,-56.8],\"y\":[0,0,64,64]}}');\n// 4:3\nb.addFixture(-1, '{\"shapes\":[{\"type\":\"loop\"}],\"vertices\":{\"x\":[-42.66,42.66,42.66,-42.66],\"y\":[0,0,64,64]}}');\n*/\n\nsetCustomPropertyNames('fixture','sceneChangeButton','sceneButton','Screen change');",
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "bitplane1",
+      "bitplane2",
+      "bitplane3",
+      "bitplane4",
+      "bitplane5",
+      "bitplane6",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "fixture",
+      "displayName" : "Action",
+      "name" : "selectorButton",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "Screen change",
+      "name" : "sceneButton",
+      "type" : "string"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "saveFullPathForImages" : false,
+      "saveImagePathsRelativeToRUBEFile" : false,
+      "useHumanReadableFloats" : true,
+      "usePrettyPrint" : true
+    },
+    "gravity" : 
+    {
+      "x" : 0,
+      "y" : -10.0
+    },
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularDamping" : 10.0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "friction" : 0.2000000029802322,
+            "id" : 3,
+            "name" : "fixture0",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 0.7595368623733521,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ 0.0 ]
+            }
+          }
+        ],
+        "id" : 4,
+        "linearVelocity" : 0,
+        "massData-I" : 0.5227756500244141,
+        "massData-mass" : 1.812373161315918,
+        "name" : "dial2",
+        "position" : 
+        {
+          "x" : 1,
+          "y" : -1.0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "friction" : 0.2000000029802322,
+            "id" : 4,
+            "name" : "fixture1",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 0.4195747375488281,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ 0.0 ]
+            }
+          }
+        ],
+        "id" : 5,
+        "linearDamping" : 10.0,
+        "linearVelocity" : 0,
+        "massData-I" : 0.04868074506521225,
+        "massData-mass" : 0.5530552864074707,
+        "name" : "sliderknob",
+        "position" : 
+        {
+          "x" : -1.433980703353882,
+          "y" : 4.480055332183838
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "selectorButton",
+                "string" : "toggleDrawer"
+              }
+            ],
+            "density" : 1,
+            "friction" : 0.2000000029802322,
+            "id" : 5,
+            "name" : "fixture4",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                0.6999999880790710,
+                0.6999999880790710,
+                -0.6999999880790710,
+                -0.6999999880790710
+              ],
+              "y" : 
+              [
+                -0.6999999880790710,
+                0.6999999880790710,
+                0.6999999880790710,
+                -0.6999999880790710
+              ]
+            }
+          }
+        ],
+        "id" : 6,
+        "linearVelocity" : 0,
+        "name" : "button",
+        "position" : 
+        {
+          "x" : 1.713988780975342,
+          "y" : 3.065931797027588
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "selectorButton",
+                "string" : "toggleDrawer"
+              }
+            ],
+            "density" : 1,
+            "friction" : 0.2000000029802322,
+            "id" : 6,
+            "name" : "fixture4",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                0.3238904476165771,
+                0.3238904476165771,
+                -0.3238904476165771,
+                -0.3238904476165771
+              ],
+              "y" : 
+              [
+                -0.3221494257450104,
+                0.3221494257450104,
+                0.3221494257450104,
+                -0.3221494257450104
+              ]
+            }
+          }
+        ],
+        "id" : 7,
+        "linearVelocity" : 0,
+        "name" : "drawer",
+        "position" : 
+        {
+          "x" : 2.0,
+          "y" : 0
+        },
+        "type" : "kinematic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : 10.0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "friction" : 0.2000000029802322,
+            "id" : 7,
+            "name" : "fixture0",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 0.7595368623733521,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ 0.0 ]
+            }
+          }
+        ],
+        "id" : 8,
+        "linearVelocity" : 0,
+        "massData-I" : 0.5227756500244141,
+        "massData-mass" : 1.812373161315918,
+        "name" : "dial3",
+        "position" : 
+        {
+          "x" : 3.0,
+          "y" : -1.0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularDamping" : 10.0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "friction" : 0.2000000029802322,
+            "id" : 8,
+            "name" : "fixture0",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.354646801948547,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ 0.0 ]
+            }
+          }
+        ],
+        "id" : 9,
+        "linearVelocity" : 0,
+        "massData-I" : 5.289617061614990,
+        "massData-mass" : 5.765036582946777,
+        "name" : "dial",
+        "position" : 
+        {
+          "x" : -2.0,
+          "y" : 2.0
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "selectorButton",
+                "string" : "goBack"
+              }
+            ],
+            "density" : 1,
+            "friction" : 0.2000000029802322,
+            "id" : 9,
+            "name" : "fixture4",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                0.4444365501403809,
+                0.4444365501403809,
+                -0.4444365501403809,
+                -0.4444365501403809
+              ],
+              "y" : 
+              [
+                -0.4444360733032227,
+                0.4444365501403809,
+                0.4444365501403809,
+                -0.4444360733032227
+              ]
+            }
+          }
+        ],
+        "id" : 10,
+        "linearVelocity" : 0,
+        "name" : "backbutton",
+        "position" : 
+        {
+          "x" : -3.662458896636963,
+          "y" : 5.805851936340332
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 45,
+            "name" : "3x2 (iPhone)",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -4.802571296691895,
+                4.802571296691895,
+                4.802569866180420,
+                -4.802569866180420
+              ],
+              "y" : [ 0.0, 0.0, 6.400000095367432, 6.400000095367432 ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 46,
+            "name" : "16x9 (iPhone5)",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -5.683053970336914,
+                5.683053970336914,
+                5.683050155639648,
+                -5.683050155639648
+              ],
+              "y" : [ 0.0, 0.0, 6.400000095367432, 6.400000095367432 ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 47,
+            "name" : "4x3 (iPad)",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -4.268270969390869,
+                4.268270969390869,
+                4.268270015716553,
+                -4.268270015716553
+              ],
+              "y" : [ 0.0, 0.0, 6.400000095367432, 6.400000095367432 ]
+            }
+          }
+        ],
+        "id" : 34,
+        "linearVelocity" : 0,
+        "name" : "background",
+        "position" : 0,
+        "type" : "static"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 4,
+        "center" : 0,
+        "file" : "images/dial_movingPart.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 8,
+        "name" : "image0",
+        "opacity" : 1,
+        "renderOrder" : 20.0,
+        "scale" : 1.215258955955505
+      },
+      
+      {
+        "aspectScale" : 1,
+        "center" : 
+        {
+          "x" : -2.0,
+          "y" : 2.03860616683960
+        },
+        "file" : "images/dial_stationaryPart.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 9,
+        "name" : "image1",
+        "opacity" : 1,
+        "scale" : 2.0
+      },
+      
+      {
+        "aspectScale" : 1,
+        "center" : 
+        {
+          "x" : 0.2997274398803711,
+          "y" : 4.482168674468994
+        },
+        "file" : "images/sliderGroove.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 10,
+        "name" : "image2",
+        "opacity" : 1,
+        "scale" : 0.5039190649986267
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 5,
+        "center" : 
+        {
+          "x" : 0.04906940460205078,
+          "y" : -0.03578615188598633
+        },
+        "file" : "images/pball.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 11,
+        "name" : "image3",
+        "opacity" : 1,
+        "renderOrder" : 10.0,
+        "scale" : 0.5470611453056335
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 6,
+        "center" : 0,
+        "file" : "images/redcircle.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 12,
+        "name" : "drawerbtn",
+        "opacity" : 1,
+        "renderOrder" : 400.0,
+        "scale" : 1.399999976158142
+      },
+      
+      {
+        "aspectScale" : 1,
+        "center" : 
+        {
+          "x" : 6.977900028228760,
+          "y" : 2.785571575164795
+        },
+        "file" : "images/greencircle.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 13,
+        "name" : "drawerbtn_hover",
+        "opacity" : 1,
+        "scale" : 1.399999976158142
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 7,
+        "center" : 
+        {
+          "x" : 0,
+          "y" : -1.0
+        },
+        "file" : "images/planetcute-wood.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 15,
+        "name" : "btn1",
+        "opacity" : 1,
+        "renderOrder" : 10.0,
+        "scale" : 2.0
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 7,
+        "center" : 
+        {
+          "x" : -1.0,
+          "y" : -1.0
+        },
+        "file" : "images/dial_stationaryPart.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 16,
+        "name" : "image1",
+        "opacity" : 1,
+        "renderOrder" : 15.0,
+        "scale" : 1.200000047683716
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 7,
+        "center" : 
+        {
+          "x" : 1,
+          "y" : -1.0
+        },
+        "file" : "images/dial_stationaryPart.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 17,
+        "name" : "image1",
+        "opacity" : 1,
+        "renderOrder" : 15.0,
+        "scale" : 1.200000047683716
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 8,
+        "center" : 0,
+        "file" : "images/dial_movingPart.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 18,
+        "name" : "image0",
+        "opacity" : 1,
+        "renderOrder" : 20.0,
+        "scale" : 1.215258955955505
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 9,
+        "center" : 0,
+        "file" : "images/dial_movingPart.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 19,
+        "name" : "image0",
+        "opacity" : 1,
+        "renderOrder" : 20.0,
+        "scale" : 2.167434930801392
+      },
+      
+      {
+        "aspectScale" : 1,
+        "body" : 10,
+        "center" : 0,
+        "file" : "images/redcircle.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 20,
+        "name" : "backbtn",
+        "opacity" : 1,
+        "renderOrder" : 400.0,
+        "scale" : 0.8888729810714722
+      },
+      
+      {
+        "aspectScale" : 1,
+        "center" : 
+        {
+          "x" : -3.542360782623291,
+          "y" : 7.385536193847656
+        },
+        "file" : "images/greencircle.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 21,
+        "name" : "backbtn_hover",
+        "opacity" : 1,
+        "scale" : 1.399999976158142
+      }
+    ],
+    "metajoint" : 
+    [
+      
+      {
+        "anchorA" : 
+        {
+          "x" : -1.0,
+          "y" : -1.0
+        },
+        "anchorB" : 0,
+        "bodyA" : 7,
+        "bodyB" : 4,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 2,
+        "lowerLimit" : -5.759586334228516,
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "dial2",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : 0
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : -1.432301640510559,
+          "y" : 4.480060100555420
+        },
+        "anchorB" : 0,
+        "bodyA" : 34,
+        "bodyB" : 5,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 3,
+        "localAxisA" : 
+        {
+          "x" : 1,
+          "y" : 7.549790126404332e-08
+        },
+        "lowerLimit" : 0,
+        "maxMotorForce" : 0,
+        "motorSpeed" : 0,
+        "name" : "slider",
+        "referenceAngle" : 0,
+        "type" : "prismatic",
+        "upperLimit" : 3.433386802673340
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : 1,
+          "y" : -1.0
+        },
+        "anchorB" : 0,
+        "bodyA" : 7,
+        "bodyB" : 8,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 4,
+        "lowerLimit" : -5.759586334228516,
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "dial3",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : 0
+      },
+      
+      {
+        "anchorA" : 
+        {
+          "x" : -2.0,
+          "y" : 2.0
+        },
+        "anchorB" : 0,
+        "bodyA" : 34,
+        "bodyB" : 9,
+        "collideConnected" : false,
+        "enableLimit" : true,
+        "enableMotor" : false,
+        "id" : 5,
+        "lowerLimit" : -5.759586334228516,
+        "maxMotorTorque" : 0,
+        "motorSpeed" : 0,
+        "name" : "dial",
+        "referenceAngle" : 0,
+        "type" : "revolute",
+        "upperLimit" : 0
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}

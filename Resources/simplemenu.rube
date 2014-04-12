@@ -1,0 +1,268 @@
+
+{
+  "activeScript" : "/*\nbody b = addBody(-1, '{}');\n// 3:2\nb.addFixture(-1, '{\"shapes\":[{\"type\":\"loop\"}],\"vertices\":{\"x\":[-48,48,48,-48],\"y\":[0,0,64,64]}}');\n// 16:9\nb.addFixture(-1, '{\"shapes\":[{\"type\":\"loop\"}],\"vertices\":{\"x\":[-56.8,56.8,56.8,-56.8],\"y\":[0,0,64,64]}}');\n// 4:3\nb.addFixture(-1, '{\"shapes\":[{\"type\":\"loop\"}],\"vertices\":{\"x\":[-42.66,42.66,42.66,-42.66],\"y\":[0,0,64,64]}}');\n*/\n\nsetCustomPropertyNames('fixture','sceneChangeButton','sceneButton','Screen change');",
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "bitplane1",
+      "bitplane2",
+      "bitplane3",
+      "bitplane4",
+      "bitplane5",
+      "bitplane6",
+      "bitplane7",
+      "bitplane8",
+      "bitplane9",
+      "bitplane10",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "customPropertyDefs" : 
+  [
+    
+    {
+      "class" : "fixture",
+      "displayName" : "Action",
+      "name" : "selectorButton",
+      "type" : "string"
+    },
+    
+    {
+      "class" : "fixture",
+      "displayName" : "Screen change",
+      "name" : "sceneButton",
+      "type" : "string"
+    }
+  ],
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "exportOptions" : 
+    {
+      "compactCommonFloats" : true,
+      "saveFullPathForImages" : false,
+      "saveImagePathsRelativeToRUBEFile" : false,
+      "useHumanReadableFloats" : true,
+      "usePrettyPrint" : true
+    },
+    "gravity" : 
+    {
+      "x" : 0,
+      "y" : -10.0
+    },
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "customProperties" : 
+            [
+              
+              {
+                "name" : "selectorButton",
+                "string" : "doSomething"
+              }
+            ],
+            "density" : 1,
+            "friction" : 0.2000000029802322,
+            "id" : 6,
+            "name" : "fixture4",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                0.6999999880790710,
+                0.6999999880790710,
+                -0.6999999880790710,
+                -0.6999999880790710
+              ],
+              "y" : 
+              [
+                -0.6999999880790710,
+                0.6999999880790710,
+                0.6999999880790710,
+                -0.6999999880790710
+              ]
+            }
+          }
+        ],
+        "id" : 1,
+        "linearVelocity" : 0,
+        "name" : "button1",
+        "position" : 
+        {
+          "x" : -2.504899024963379,
+          "y" : 3.116471767425537
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 45,
+            "name" : "3x2 (iPhone)",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -4.802571296691895,
+                4.802571296691895,
+                4.802569866180420,
+                -4.802569866180420
+              ],
+              "y" : [ 0.0, 0.0, 6.400000095367432, 6.400000095367432 ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 46,
+            "name" : "16x9 (iPhone5)",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -5.683053970336914,
+                5.683053970336914,
+                5.683050155639648,
+                -5.683050155639648
+              ],
+              "y" : [ 0.0, 0.0, 6.400000095367432, 6.400000095367432 ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 47,
+            "name" : "4x3 (iPad)",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "loop"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -4.268270969390869,
+                4.268270969390869,
+                4.268270015716553,
+                -4.268270015716553
+              ],
+              "y" : [ 0.0, 0.0, 6.400000095367432, 6.400000095367432 ]
+            }
+          }
+        ],
+        "id" : 34,
+        "linearVelocity" : 0,
+        "name" : "background",
+        "position" : 0,
+        "type" : "static"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "aspectScale" : 1,
+        "body" : 1,
+        "center" : 0,
+        "file" : "images/redcircle.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "button1",
+        "opacity" : 1,
+        "renderOrder" : 400.0,
+        "scale" : 1.399999976158142
+      },
+      
+      {
+        "aspectScale" : 1,
+        "center" : 
+        {
+          "x" : -2.171770095825195,
+          "y" : -1.152130007743835
+        },
+        "file" : "images/greencircle.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 6,
+        "name" : "button1_hover",
+        "opacity" : 1,
+        "scale" : 1.399999976158142
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 60.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  }
+}
